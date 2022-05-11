@@ -7,10 +7,11 @@
     <title>Главная</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
 </head>
 <body>
     <header>
-        <div class="container" >
+        <div class="container">
             <div class="header row align-items-center justify-content-space-between">
                 <div class="logo col-lg-3 col-md-8">
                     <a href="/">
@@ -534,60 +535,95 @@
                     </div>
                 </div>
             </div>
+           
+            <h3>Журналы</h3>
     
-            <div class="journal-block">
-                <h2>
-                    Журналы
-                </h2>
-                <div class="journal-wrapper">
-                    <div class="journal-item-block">
-                        <div class="journal-item test">
-                            <div>Адам Әлемі</div> 
-                        </div>
-                        <div class="journal-item test">
-                            <div>Аль-Фараби</div>
-                        </div>
-                        <div class="journal-item test">
-                            <div>ALPHARABI</div>
-                        </div>
+            <div class="tabs">
+                <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+                <label class="label" for="tab-1"><img class="al-farabi_img img-1" data-journal-target="#panel__img-1" src="img/adam-alemi.png" alt=""></label>
+                <div id="panel__img-1" class="panel panel__img-1" data-journal-content>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam dicta dolores error eum facilis hic incidunt ipsam ipsum iusto laudantium magni, minima molestiae, officiis quam similique soluta tempora venia</p>
+                  <a class="button" href="#">Открыть Журнал</a>
+                </div>
+                <input class="input" name="tabs" type="radio" id="tab-2"/>
+                <label class="label" for="tab-2"><img class="al-farabi_img img-2" data-journal-target="#panel__img-2" src="img/al-farabi-3.png" alt=""></label>
+                <div id="panel__img-2" class="panel panel__img-2" data-journal-content>
+                  <p>Журнал социогуманитарных исследований «Аль-Фараби» освещает актуальные и дискуссионные проблемы философско-политологического и духовно-познавательного характера современного социогуманитарного знания.</p>
+                  <a class="button" href="#">Открыть Журнал</a>
+                </div>
+                <input class="input" name="tabs" type="radio" id="tab-3"/>
+                <label class="label" for="tab-3"><img class="al-farabi_img img-3" data-journal-target="#panel__img-3" src="img/al-Farabi (1).png" alt=""></label>
+                <div id="panel__img-3" class="panel panel__img-3" data-journal-content>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam dicta dolores error eum facilis hic incidunt ipsam ipsum iusto laudantium magni, minima molestiae, officiis quam similique soluta tempora venia</p>
+                  <a class="button" href="#">Открыть Журнал</a>
+                </div>
+              </div>
+
+              <!-- <div class="journal-wrapper">
+                <div class="journal-item-block">
+                   <div class="journal-item test" data-journal-target="#journal-item-3">
+                       <div></div>
+                   </div>
+                   <div class="journal-item journal-second test" data-journal-target="#journal-item-2">
+                       <div></div>
+                   </div>
+                   <div class="journal-item test" data-journal-target="#journal-item-1">
+                       <div>ALPHARABI</div>
+                   </div>
+               </div>
+               <div id="journal-item-1" class="journal-description active" data-journal-content>
+                   <p>
+                       Журнал социогуманитарных исследований «Аль-Фараби» освещает актуальные и дискуссионные проблемы философско-политологического и духовно-познавательного характера современного социогуманитарного знания.
+                   </p>
+                   <a href="#" class="journal-btn">
+                       Открыть журнал
+                   </a>
+               </div>
+               <div class="journal-description" id="journal-item-2"  data-journal-content>
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam dicta dolores error eum facilis hic incidunt ipsam ipsum iusto laudantium magni, minima molestiae, officiis quam similique soluta tempora veniam?
+                   </p>
+                   <a href="#" class="journal-btn">
+                       Открыть журнал
+                   </a>
+               </div>
+               <div class="journal-description" id="journal-item-3"  data-journal-content>
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ea eaque esse iusto nam nobis sint. Asperiores at deserunt eius expedita illum minima obcaecati placeat quis totam voluptatum! Et, totam.
+                   </p>
+                   <a href="#" class="journal-btn">
+                       Открыть журнал
+                   </a>
+               </div>
+           </div> -->
+
+                <div class="feedback-block">
+                    <div class="left-side">
+                        <form action="">
+                            <h3>
+                                Подпишитесь на нашу бесплатную рассылку
+                            </h3>
+                            <input type="text" name="" id="" placeholder="Адрес почты">
+                            <button type="submit" class="feedback-btn">Подписаться</button>
+                        </form>
+                        
                     </div>
-                    <div class="journal-description">
-                        <p>
-                            Журнал социогуманитарных исследований «Аль-Фараби» освещает актуальные и дискуссионные проблемы философско-политологического и духовно-познавательного характера современного социогуманитарного знания.
-                        </p>
-                        <a href="#" class="journal-btn">
-                            Открыть журнал
-                        </a>
+                    <div class="right-side basic-right-side">
+                        <a href="#"><img src="img/youtube-icon.svg" alt="youtube-icon"></a>
+                        <a href="#"><img src="img/facebook-icon.svg" alt="facebook-icon"></a>
+                        <a href="#"><img src="img/telegram-icon.svg" alt="telegram-icon"></a>
+                        <a href="#"><img src="img/instagram-icon.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="img/whatsapp-icon.svg" alt="whatsapp-icon"></a>
+                    </div>
+                    <div class="right-side dark-mode-right-side">
+                        <a href="#"><img src="img/youtube-icon-dark-mode.svg" alt="youtube-icon"></a>
+                        <a href="#"><img src="img/facebook-icon-dark-mode.svg" alt="facebook-icon"></a>
+                        <a href="#"><img src="img/telegram-icon-dark-mode.svg" alt="telegram-icon"></a>
+                        <a href="#"><img src="img/instagram-icon-dark-mode.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="img/whatsapp-icon-dark-mode.svg" alt="whatsapp-icon"></a>
                     </div>
                 </div>
-            </div>
-            <div class="feedback-block">
-                <div class="left-side">
-                    <form action="">
-                        <h3>
-                            Подпишитесь на нашу бесплатную рассылку
-                        </h3>
-                        <input type="text" name="" id="" placeholder="Адрес почты">
-                        <button type="submit" class="feedback-btn">Подписаться</button>
-                    </form>
-                    
-                </div>
-                <div class="right-side basic-right-side">
-                    <a href="#"><img src="img/youtube-icon.svg" alt="youtube-icon"></a>
-                    <a href="#"><img src="img/facebook-icon.svg" alt="facebook-icon"></a>
-                    <a href="#"><img src="img/telegram-icon.svg" alt="telegram-icon"></a>
-                    <a href="#"><img src="img/instagram-icon.svg" alt="instagram-icon"></a>
-                    <a href="#"><img src="img/whatsapp-icon.svg" alt="whatsapp-icon"></a>
-                </div>
-                <div class="right-side dark-mode-right-side">
-                    <a href="#"><img src="img/youtube-icon-dark-mode.svg" alt="youtube-icon"></a>
-                    <a href="#"><img src="img/facebook-icon-dark-mode.svg" alt="facebook-icon"></a>
-                    <a href="#"><img src="img/telegram-icon-dark-mode.svg" alt="telegram-icon"></a>
-                    <a href="#"><img src="img/instagram-icon-dark-mode.svg" alt="instagram-icon"></a>
-                    <a href="#"><img src="img/whatsapp-icon-dark-mode.svg" alt="whatsapp-icon"></a>
-                </div>
-            </div>
-        </div>
+            </>
         <img class="background-right-icon" src="img/oyu-right-icon.svg" alt="oyu-right-icon">
     </div>
     <footer>
@@ -809,5 +845,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/tabs.js"></script>
 </body>
 </html>
